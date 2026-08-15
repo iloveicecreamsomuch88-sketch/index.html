@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshness Information</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .info-table {
+            width: 90%;
+            max-width: 900px;
+            margin: 50px auto;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .info-table th,
+        .info-table td {
+            border: 1px solid #222;
+            padding: 20px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .info-table th {
+            font-size: 20px;
+            font-weight: 600;
+            height: 80px;
+        }
+
+        .info-table td {
+            font-size: 19px;
+            height: 100px;
+        }
+
+        /* Makes the columns evenly sized */
+        .info-table th,
+        .info-table td {
+            width: 25%;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .info-table {
+                width: 100%;
+            }
+
+            .info-table th,
+            .info-table td {
+                padding: 12px 6px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <table class="info-table">
+        <tr>
+            <th>Freshness %</th>
+            <th>No. of Handlers</th>
+            <th>Farm Origin</th>
+            <th>Days Since Harvest</th>
+        </tr>
+
+        <tr>
+            <td>98%</td>
+            <td>4-5 handlers</td>
+            <td>Kashmir Region</td>
+            <td>7 days</td>
+        </tr>
+    </table>
+
+</body>
+</html>
